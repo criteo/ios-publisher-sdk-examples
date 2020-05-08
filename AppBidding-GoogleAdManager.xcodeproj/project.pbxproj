@@ -106,6 +106,7 @@
 				918F15A5245AD07D001E6671 /* Sources */,
 				918F15A6245AD07D001E6671 /* Frameworks */,
 				918F15A7245AD07D001E6671 /* Resources */,
+				2BD1A2B7641A5E0D07FC6EB5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -162,6 +163,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2BD1A2B7641A5E0D07FC6EB5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppBidding-GoogleAdManager/Pods-AppBidding-GoogleAdManager-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppBidding-GoogleAdManager/Pods-AppBidding-GoogleAdManager-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppBidding-GoogleAdManager/Pods-AppBidding-GoogleAdManager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		971EE63524A7FC47E4494DD5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

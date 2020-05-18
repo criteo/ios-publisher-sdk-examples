@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		918F15B9245AD07F001E6671 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 918F15B8245AD07F001E6671 /* Assets.xcassets */; };
 		918F15BC245AD07F001E6671 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 918F15BA245AD07F001E6671 /* LaunchScreen.storyboard */; };
 		918F15BF245AD07F001E6671 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 918F15BE245AD07F001E6671 /* main.m */; };
+		91AD33382472312500742852 /* AdConfigurations.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AD33372472312500742852 /* AdConfigurations.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		918F15BB245AD07F001E6671 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		918F15BD245AD07F001E6671 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		918F15BE245AD07F001E6671 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		91AD33362472312500742852 /* AdConfigurations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdConfigurations.h; sourceTree = "<group>"; };
+		91AD33372472312500742852 /* AdConfigurations.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdConfigurations.m; sourceTree = "<group>"; };
 		CD496696A492BB1C9BED369B /* Pods-AppBidding-GoogleAdManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppBidding-GoogleAdManager.release.xcconfig"; path = "Target Support Files/Pods-AppBidding-GoogleAdManager/Pods-AppBidding-GoogleAdManager.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +87,8 @@
 			children = (
 				918F15AC245AD07D001E6671 /* AppDelegate.h */,
 				918F15AD245AD07D001E6671 /* AppDelegate.m */,
+				91AD33362472312500742852 /* AdConfigurations.h */,
+				91AD33372472312500742852 /* AdConfigurations.m */,
 				918F15B2245AD07D001E6671 /* ViewController.h */,
 				918F15B3245AD07D001E6671 /* ViewController.m */,
 				918F15B5245AD07D001E6671 /* Main.storyboard */,
@@ -212,6 +217,7 @@
 				918F15B4245AD07D001E6671 /* ViewController.m in Sources */,
 				918F15AE245AD07D001E6671 /* AppDelegate.m in Sources */,
 				918F15BF245AD07F001E6671 /* main.m in Sources */,
+				91AD33382472312500742852 /* AdConfigurations.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +365,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 3.5.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.criteo.samples.AppBidding-GoogleAdManager";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -377,6 +384,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 3.5.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.criteo.samples.AppBidding-GoogleAdManager";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

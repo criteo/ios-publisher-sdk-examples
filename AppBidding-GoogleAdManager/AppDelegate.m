@@ -6,6 +6,8 @@
 //
 
 #import "AppDelegate.h"
+#import "AdConfigurations.h"
+@import CriteoPublisherSdk;
 
 @interface AppDelegate ()
 
@@ -15,7 +17,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+
+    NSArray *adUnits = @[
+        [AdConfigurations criteoBannerAdUnit],
+        [AdConfigurations criteoInterstitialAdUnit]
+    ];
+    // Register Criteo SDK as early as possible
+    [[Criteo sharedCriteo] registerCriteoPublisherId:[AdConfigurations criteoPublisherId] withAdUnits:adUnits];
+
     return YES;
 }
 

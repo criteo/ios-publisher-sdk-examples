@@ -6,10 +6,9 @@
 //
 
 #import "ViewController.h"
+#import "AdConfigurations.h"
 @import GoogleMobileAds;
-
-static NSString *const gamBannerAdUnitId = @"/6499/example/banner";
-static NSString *const gamInterstitialAdUnitId = @"/6499/example/interstitial";
+@import CriteoPublisherSdk;
 
 @interface ViewController ()
 
@@ -23,20 +22,28 @@ static NSString *const gamInterstitialAdUnitId = @"/6499/example/interstitial";
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.bannerView.adUnitID = gamBannerAdUnitId;
+    self.bannerView.adUnitID = [AdConfigurations gamBannerAdUnitId];
     self.bannerView.rootViewController = self;
     self.bannerView.adSize = kGADAdSizeSmartBannerPortrait;
 
-    self.interstitial = [self createAndLoadInterstitialWithAdUnitId:gamInterstitialAdUnitId];
+    self.interstitial = [self createAndLoadInterstitialWithAdUnitId:[AdConfigurations gamInterstitialAdUnitId]];
 }
 
 - (IBAction)displayBanner {
-    [self.bannerView loadRequest:[DFPRequest request]];
+    DFPRequest *request = [DFPRequest request];
+
+    [[Criteo sharedCriteo] setBidsForRequest:request withAdUnit:[AdConfigurations criteoBannerAdUnit]];
+
+    [self.bannerView loadRequest:request];
 }
 
 - (DFPInterstitial *)createAndLoadInterstitialWithAdUnitId:(NSString *)adUnitId {
     DFPInterstitial *interstitial = [[DFPInterstitial alloc] initWithAdUnitID:adUnitId];
-    [interstitial loadRequest:[DFPRequest request]];
+    DFPRequest *request = [DFPRequest request];
+
+    [[Criteo sharedCriteo] setBidsForRequest:request withAdUnit:[AdConfigurations criteoInterstitialAdUnit]];
+
+    [interstitial loadRequest:request];
     return interstitial;
 }
 

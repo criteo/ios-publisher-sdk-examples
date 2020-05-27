@@ -53,7 +53,8 @@
 				3AE4B0DB124D258D023799BF /* Pods-AppBidding-GoogleAdManager.debug.xcconfig */,
 				CD496696A492BB1C9BED369B /* Pods-AppBidding-GoogleAdManager.release.xcconfig */,
 			);
-			path = Pods;
+			name = Pods;
+			path = ../Pods;
 			sourceTree = "<group>";
 		};
 		81A1532DA5B5FF8B61A26465 /* Frameworks */ = {

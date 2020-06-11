@@ -1,45 +1,34 @@
 //
-//  ViewController.m
+//  InterstitialViewController.m
 //  AppBidding-GoogleAdManager
 //
 //  Copyright © 2020 Criteo. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "InterstitialViewController.h"
 #import "AdConfigurations.h"
 @import GoogleMobileAds;
 @import CriteoPublisherSdk;
 
-@interface ViewController ()
+@interface InterstitialViewController () <GADInterstitialDelegate>
 
-@property(nonatomic, strong) IBOutlet DFPBannerView *bannerView;
 @property(nonatomic, strong) DFPInterstitial *interstitial;
+@property (weak, nonatomic) IBOutlet UIButton *displayInterstitialButton;
 
 @end
 
-@implementation ViewController
+@implementation InterstitialViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.bannerView.adUnitID = [AdConfigurations gamBannerAdUnitId];
-    self.bannerView.rootViewController = self;
-    self.bannerView.adSize = kGADAdSizeSmartBannerPortrait;
-
     self.interstitial = [self createAndLoadInterstitialWithAdUnitId:[AdConfigurations gamInterstitialAdUnitId]];
-}
-
-- (IBAction)displayBanner {
-    DFPRequest *request = [DFPRequest request];
-
-    [[Criteo sharedCriteo] setBidsForRequest:request withAdUnit:[AdConfigurations criteoBannerAdUnit]];
-
-    [self.bannerView loadRequest:request];
 }
 
 - (DFPInterstitial *)createAndLoadInterstitialWithAdUnitId:(NSString *)adUnitId {
     DFPInterstitial *interstitial = [[DFPInterstitial alloc] initWithAdUnitID:adUnitId];
     DFPRequest *request = [DFPRequest request];
+    interstitial.delegate = self;
 
     [[Criteo sharedCriteo] setBidsForRequest:request withAdUnit:[AdConfigurations criteoInterstitialAdUnit]];
 
@@ -49,8 +38,19 @@
 
 - (IBAction)displayInterstitial {
     if (self.interstitial.isReady) {
-      [self.interstitial presentFromRootViewController:self];
+        [self.interstitial presentFromRootViewController:self];
+        self.displayInterstitialButton.enabled = NO;
     }
+}
+
+- (void)interstitialDidReceiveAd:(GADInterstitial *)ad {
+    self.displayInterstitialButton.enabled = YES;
+    [self.displayInterstitialButton setTitle:@"Display Interstitial" forState:UIControlStateNormal];
+}
+
+- (void)interstitial:(GADInterstitial *)ad didFailToReceiveAdWithError:(GADRequestError *)error {
+    self.displayInterstitialButton.enabled = NO;
+    [self.displayInterstitialButton setTitle:@"Ad Failed to Load" forState:UIControlStateNormal];
 }
 
 @end

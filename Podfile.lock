@@ -1,8 +1,8 @@
 PODS:
-  - CriteoPublisherSdk (3.5.0)
-  - Google-Mobile-Ads-SDK (7.59.0):
+  - CriteoPublisherSdk (3.6.1)
+  - Google-Mobile-Ads-SDK (7.60.0):
     - GoogleAppMeasurement (~> 6.0)
-  - GoogleAppMeasurement (6.5.0):
+  - GoogleAppMeasurement (6.6.0):
     - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
     - GoogleUtilities/MethodSwizzler (~> 6.0)
     - GoogleUtilities/Network (~> 6.0)
@@ -30,11 +30,11 @@ PODS:
     - nanopb/encode (= 1.30905.0)
   - nanopb/decode (1.30905.0)
   - nanopb/encode (1.30905.0)
-  - PromisesObjC (1.2.8)
+  - PromisesObjC (1.2.9)
 
 DEPENDENCIES:
-  - CriteoPublisherSdk
-  - Google-Mobile-Ads-SDK
+  - CriteoPublisherSdk (~> 3.6)
+  - Google-Mobile-Ads-SDK (~> 7.60)
 
 SPEC REPOS:
   trunk:
@@ -46,13 +46,13 @@ SPEC REPOS:
     - PromisesObjC
 
 SPEC CHECKSUMS:
-  CriteoPublisherSdk: 4fb2201637e8f8eac293ee087c9bd16ea138c22c
-  Google-Mobile-Ads-SDK: 118217ac8b80e28aabe0c00aedab1cd885857776
-  GoogleAppMeasurement: 4c644d86835d827bab30ab6aabb9ecaf1f500735
+  CriteoPublisherSdk: 8dad509d7f45c526761acff9aa566695276f8139
+  Google-Mobile-Ads-SDK: d70efb31e7ea19fe99d466dc5d4788966b6914f8
+  GoogleAppMeasurement: 67458367830514fb20fd9e233496f1eef9d90185
   GoogleUtilities: 39530bc0ad980530298e9c4af8549e991fd033b1
   nanopb: c43f40fadfe79e8b8db116583945847910cbabc9
-  PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
+  PromisesObjC: b48e0338dbbac2207e611750777895f7a5811b75
 
-PODFILE CHECKSUM: 01f8f109421321cfdfe48553e2602c087e2f6602
+PODFILE CHECKSUM: 763ca9dcdf848b9b80ad05cdf49cd2e7532e5f56
 
 COCOAPODS: 1.9.1

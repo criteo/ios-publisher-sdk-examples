@@ -2,13 +2,10 @@
 //  InterstitialViewController.h
 //  AppBidding-MoPub
 //
-//  Created by Abdoul Guisset on 6/29/20.
-//  Copyright © 2020 Abdoul. All rights reserved.
+//  Copyright © 2020 Criteo. All rights reserved.
 //
 
 
-#import <UIKit/UIKit.h>
-#import "MPAdView.h"
 #import "MPInterstitialAdController.h"
 
 

@@ -2,11 +2,10 @@
 //  InterstitialViewController.m
 //  AppBidding-MoPub
 //
-//  Created by Abdoul Guisset on 7/2/20.
-//  Copyright © 2020 Abdoul. All rights reserved.
+//  Copyright © 2020 Criteo. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+
 #import "InterstitialViewController.h"
 #import "AdConfigurations.h"
 @import CriteoPublisherSdk;
@@ -33,8 +32,6 @@
 
 - (void)loadInterstitial {
     
-    //MoPub Instantiation
-    self.interstitial = [MPInterstitialAdController interstitialAdControllerForAdUnitId:[AdConfigurations mopubInterstitialAdUnitId]];
     // add criteo
     [[Criteo sharedCriteo] setBidsForRequest:self.interstitial withAdUnit:[AdConfigurations criteoInterstitialAdUnit]];
 
@@ -45,11 +42,9 @@
 - (IBAction)displayInterstitial {
     
     if(self.interstitial.ready) {
-        [self.interstitial showFromViewController:self];
-        self.displayInterstitialButton.enabled = NO;
-        
         // Ad loaded; play the ad
         [self.interstitial showFromViewController:self];
+        self.displayInterstitialButton.enabled = NO;
     }
     
 }

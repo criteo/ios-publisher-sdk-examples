@@ -2,9 +2,9 @@
 //  AppDelegate.h
 //  AppBidding-MoPub
 //
-//  Created by Abdoul Guisset.
-//  Copyright © 2020 Abdoul. All rights reserved.
+//  Copyright © 2020 Criteo. All rights reserved.
 //
+
 
 #import <UIKit/UIKit.h>
 #import "MoPub.h"

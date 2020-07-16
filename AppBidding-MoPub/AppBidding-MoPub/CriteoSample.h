@@ -2,9 +2,9 @@
 //  CriteoSample.h
 //  AppBidding-MoPub
 //
-//  Created by Abdoul Guisset.
-//  Copyright © 2020 Abdoul. All rights reserved.
+//  Copyright © 2020 Criteo. All rights reserved.
 //
+
 
 
 #import <Foundation/Foundation.h>
@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (assign) NSString *label;
 @property (assign) NSString *segueId;
 
-- (id) initWithLabel:(NSString*)label AndSegueId:(NSString*)segueId;
+- (id) initWithLabel:(NSString *)label AndSegueId:(NSString *)segueId;
 
 @end
 

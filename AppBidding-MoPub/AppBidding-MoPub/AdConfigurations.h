@@ -2,9 +2,9 @@
 //  AdConfigurations.h
 //  AppBidding-MoPub
 //
-//  Created by Abdoul Guisset.
-//  Copyright © 2020 Abdoul. All rights reserved.
+//  Copyright © 2020 Criteo. All rights reserved.
 //
+
 #import <Foundation/Foundation.h>
 @import CriteoPublisherSdk;
 
@@ -14,12 +14,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 # pragma mark - MoPub
 
-+ (NSString*) mopubBannerAdUnitId;
-+ (NSString*) mopubInterstitialAdUnitId;
++ (NSString *)mopubBannerAdUnitId;
++ (NSString *)mopubInterstitialAdUnitId;
 
 # pragma mark - Criteo
 
-+ (NSString*) criteoPublisherId;
++ (NSString *)criteoPublisherId;
 + (CRBannerAdUnit *)criteoBannerAdUnit;
 + (CRInterstitialAdUnit *)criteoInterstitialAdUnit;
 

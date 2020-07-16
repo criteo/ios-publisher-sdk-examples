@@ -2,12 +2,11 @@
 //  HomeViewController.m
 //  AppBidding-MoPub
 //
-//  Created by Abdoul Guisset on 6/30/20.
-//  Copyright © 2020 Abdoul. All rights reserved.
+//  Copyright © 2020 Criteo. All rights reserved.
 //
 
+
 #import "HomeViewController.h"
-#import "BannerViewController.h"
 
 #import "CriteoSample.h"
 

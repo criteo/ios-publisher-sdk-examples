@@ -2,9 +2,9 @@
 //  BannerViewController.h
 //  AppBidding-MoPub
 //
-//  Created by Abdoul Guisset on 6/30/20.
-//  Copyright © 2020 Abdoul. All rights reserved.
+//  Copyright © 2020 Criteo. All rights reserved.
 //
+
 
 #ifndef BannerViewController_h
 #define BannerViewController_h

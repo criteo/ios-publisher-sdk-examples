@@ -2,9 +2,9 @@
 //  AdConfigurations.m
 //  AppBidding-MoPub
 //
-//  Created by Abdoul Guisset.
-//  Copyright © 2020 Abdoul. All rights reserved.
+//  Copyright © 2020 Criteo. All rights reserved.
 //
+
 
 #import "AdConfigurations.h"
 @import CriteoPublisherSdk;

@@ -1,0 +1,20 @@
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: macos-10.15
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      
+    - name: CocoaPod Install
+      run: pod install
+      
+    - name: Clean and Build AppBidding-GoogleAdManager
+      run: xcodebuild clean build -scheme AppBidding-GoogleAdManager -workspace CriteoSamples.xcworkspace -destination "platform=iOS Simulator,name=iPhone 11"

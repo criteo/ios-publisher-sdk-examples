@@ -9,5 +9,5 @@ target 'AppBidding-GoogleAdManager' do
   use_frameworks!
 
   pod 'Google-Mobile-Ads-SDK', '~> 7.60'
-  pod 'CriteoPublisherSdk', '~> 3.6'
+  pod 'CriteoPublisherSdk', '~> 3.6.0'
 end

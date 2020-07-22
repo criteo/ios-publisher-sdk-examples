@@ -33,7 +33,7 @@ PODS:
   - PromisesObjC (1.2.9)
 
 DEPENDENCIES:
-  - CriteoPublisherSdk (~> 3.6)
+  - CriteoPublisherSdk (~> 3.6.0)
   - Google-Mobile-Ads-SDK (~> 7.60)
 
 SPEC REPOS:
@@ -53,6 +53,6 @@ SPEC CHECKSUMS:
   nanopb: c43f40fadfe79e8b8db116583945847910cbabc9
   PromisesObjC: b48e0338dbbac2207e611750777895f7a5811b75
 
-PODFILE CHECKSUM: 763ca9dcdf848b9b80ad05cdf49cd2e7532e5f56
+PODFILE CHECKSUM: 74899ca69a8f97295cdc2d304d0fad3bd3aede24
 
 COCOAPODS: 1.9.1

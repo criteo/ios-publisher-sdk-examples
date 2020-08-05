@@ -17,6 +17,7 @@
 		B192C78124D93121008CE267 /* AdConfigurations.m in Sources */ = {isa = PBXBuildFile; fileRef = B192C78024D93121008CE267 /* AdConfigurations.m */; };
 		B192C78424D933E6008CE267 /* CriteoSample.m in Sources */ = {isa = PBXBuildFile; fileRef = B192C78324D933E6008CE267 /* CriteoSample.m */; };
 		B192C78724D935C8008CE267 /* BannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B192C78624D935C8008CE267 /* BannerViewController.m */; };
+		B192C78A24D935D8008CE267 /* InterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B192C78924D935D8008CE267 /* InterstitialViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,8 @@
 		B192C78324D933E6008CE267 /* CriteoSample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CriteoSample.m; sourceTree = "<group>"; };
 		B192C78524D935C8008CE267 /* BannerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BannerViewController.h; sourceTree = "<group>"; };
 		B192C78624D935C8008CE267 /* BannerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BannerViewController.m; sourceTree = "<group>"; };
+		B192C78824D935D8008CE267 /* InterstitialViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterstitialViewController.h; sourceTree = "<group>"; };
+		B192C78924D935D8008CE267 /* InterstitialViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterstitialViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +105,8 @@
 				B191A9E024D92B3100E4FF91 /* HomeViewController.m */,
 				B192C78524D935C8008CE267 /* BannerViewController.h */,
 				B192C78624D935C8008CE267 /* BannerViewController.m */,
+				B192C78824D935D8008CE267 /* InterstitialViewController.h */,
+				B192C78924D935D8008CE267 /* InterstitialViewController.m */,
 				B170F9D024D12A1C003E8BEF /* Main.storyboard */,
 				B170F9D324D12A1D003E8BEF /* Assets.xcassets */,
 				B170F9D524D12A1D003E8BEF /* LaunchScreen.storyboard */,
@@ -214,6 +219,7 @@
 				B170F9DA24D12A1D003E8BEF /* main.m in Sources */,
 				B191A9E124D92B3100E4FF91 /* HomeViewController.m in Sources */,
 				B192C78724D935C8008CE267 /* BannerViewController.m in Sources */,
+				B192C78A24D935D8008CE267 /* InterstitialViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

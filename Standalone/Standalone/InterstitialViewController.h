@@ -1,5 +1,5 @@
 //
-//  AdConfigurations.h
+//  InterstitialViewController.h
 //  Standalone
 //
 //  Copyright © 2020 Criteo. All rights reserved.
@@ -17,18 +17,11 @@
 // limitations under the License.
 //
 
-#import <Foundation/Foundation.h>
-#import <CriteoPublisherSdk/CriteoPublisherSdk.h>
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AdConfigurations : NSObject
-
-# pragma mark - Criteo
-
-+ (NSString*) criteoPublisherId;
-+ (CRBannerAdUnit *)criteoBannerAdUnit;
-+ (CRInterstitialAdUnit *)criteoInterstitialAdUnit;
+@interface InterstitialViewController : UIViewController
 
 @end
 

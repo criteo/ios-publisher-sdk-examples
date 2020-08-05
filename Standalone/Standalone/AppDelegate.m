@@ -31,7 +31,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     NSArray *adUnits = @[
-        [AdConfigurations criteoBannerAdUnit]
+        [AdConfigurations criteoBannerAdUnit],
+        [AdConfigurations criteoInterstitialAdUnit]
     ];
     // Register Criteo SDK as early as possible
     [[Criteo sharedCriteo] registerCriteoPublisherId:[AdConfigurations criteoPublisherId] withAdUnits:adUnits];

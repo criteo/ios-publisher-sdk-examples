@@ -59,6 +59,7 @@
                     <connections>
                         <outlet property="tableView" destination="i1z-fz-Ypw" id="HGy-ba-bX0"/>
                         <segue destination="BM5-uo-64l" kind="show" identifier="BannerSampleSegue" id="Oxo-hk-zQ5"/>
+                        <segue destination="1fS-46-dCO" kind="show" identifier="InterstitialSampleSegue" id="toZ-er-rSU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -116,6 +117,74 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IcL-gO-dxg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1732" y="138"/>
+        </scene>
+        <!--Interstitial Sample-->
+        <scene sceneID="FHg-uX-aEZ">
+            <objects>
+                <viewController storyboardIdentifier="InterstitialViewController" id="1fS-46-dCO" customClass="InterstitialViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wig-8f-Rxa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NFd-0S-Ai1">
+                                <rect key="frame" x="144" y="383.33333333333331" width="126" height="30"/>
+                                <state key="normal" title="Loading Interstitial"/>
+                                <connections>
+                                    <action selector="displayInterstitial" destination="1fS-46-dCO" eventType="touchUpInside" id="eQD-Rl-HqX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Load" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mBY-EV-b9t">
+                                <rect key="frame" x="20" y="84" width="374" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Load Interstitial ad with CRInterstitial object" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M7S-VP-7OM">
+                                <rect key="frame" x="20" y="122.99999999999999" width="374" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Display" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKA-Xx-BrM">
+                                <rect key="frame" x="20" y="183.33333333333334" width="374" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="At a transition between activities or other transition points in the app, check if the ad is fully loaded and then show the ad" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JFy-rL-Pi8">
+                                <rect key="frame" x="20" y="222.33333333333334" width="374" height="61.000000000000028"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="M7S-VP-7OM" firstAttribute="top" secondItem="mBY-EV-b9t" secondAttribute="bottom" constant="10" id="0uc-Hm-3wK"/>
+                            <constraint firstItem="mBY-EV-b9t" firstAttribute="top" secondItem="h5c-02-s2q" secondAttribute="top" constant="40" id="1bj-C5-IkF"/>
+                            <constraint firstItem="M7S-VP-7OM" firstAttribute="leading" secondItem="h5c-02-s2q" secondAttribute="leading" constant="20" id="3ny-oZ-gCM"/>
+                            <constraint firstItem="JFy-rL-Pi8" firstAttribute="leading" secondItem="h5c-02-s2q" secondAttribute="leading" constant="20" id="I7D-Rm-gXK"/>
+                            <constraint firstItem="NFd-0S-Ai1" firstAttribute="top" secondItem="JFy-rL-Pi8" secondAttribute="bottom" constant="100" id="MqG-0a-1QH"/>
+                            <constraint firstItem="NKA-Xx-BrM" firstAttribute="top" secondItem="M7S-VP-7OM" secondAttribute="bottom" constant="40" id="SYM-EJ-3WO"/>
+                            <constraint firstItem="h5c-02-s2q" firstAttribute="trailing" secondItem="JFy-rL-Pi8" secondAttribute="trailing" constant="20" id="bOC-4i-Afk"/>
+                            <constraint firstItem="h5c-02-s2q" firstAttribute="trailing" secondItem="mBY-EV-b9t" secondAttribute="trailing" constant="20" id="fT8-fr-BeE"/>
+                            <constraint firstItem="mBY-EV-b9t" firstAttribute="leading" secondItem="h5c-02-s2q" secondAttribute="leading" constant="20" id="gCk-4c-0W6"/>
+                            <constraint firstItem="JFy-rL-Pi8" firstAttribute="top" secondItem="NKA-Xx-BrM" secondAttribute="bottom" constant="10" id="jFg-57-iXr"/>
+                            <constraint firstItem="h5c-02-s2q" firstAttribute="trailing" secondItem="M7S-VP-7OM" secondAttribute="trailing" constant="20" id="jcV-kv-0yO"/>
+                            <constraint firstItem="NKA-Xx-BrM" firstAttribute="leading" secondItem="h5c-02-s2q" secondAttribute="leading" constant="20" id="mWd-DP-K8v"/>
+                            <constraint firstItem="NFd-0S-Ai1" firstAttribute="centerX" secondItem="Wig-8f-Rxa" secondAttribute="centerX" id="s4Q-bp-4RQ"/>
+                            <constraint firstItem="h5c-02-s2q" firstAttribute="trailing" secondItem="NKA-Xx-BrM" secondAttribute="trailing" constant="20" id="txQ-nZ-Kb7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="h5c-02-s2q"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Interstitial Sample" id="h2W-gw-6ei"/>
+                    <connections>
+                        <outlet property="displayInterstitialButton" destination="NFd-0S-Ai1" id="2hb-qv-mi2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="boP-vs-FCJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2391" y="138"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ua3-nz-9fV">

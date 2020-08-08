@@ -13,11 +13,13 @@ target 'AppBidding-GoogleAdManager' do
 end
 
 project 'AppBidding-MoPub/AppBidding-MoPub.xcodeproj'
+
 target 'AppBidding-MoPub' do
   project 'AppBidding-MoPub/AppBidding-MoPub.xcodeproj'
   use_frameworks!
 
-  pod 'mopub-ios-sdk'
+  pod 'mopub-ios-sdk', '~> 5.13.0'
+  pod 'CriteoPublisherSdk', '~> 3.9.0'
 end
 
 target 'Standalone' do

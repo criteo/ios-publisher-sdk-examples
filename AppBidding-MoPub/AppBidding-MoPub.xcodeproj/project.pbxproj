@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C767F2BABBCD17C6B72CC92 /* libPods-AppBidding-MoPub.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A9A011D59BCFF4A924A9F10 /* libPods-AppBidding-MoPub.a */; };
+		1BC0C7A4B32AD8A6FF3D673F /* Pods_AppBidding_MoPub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26B99A87E3AE84424F00ECFB /* Pods_AppBidding_MoPub.framework */; };
 		E28B310A24AA3AA30038C434 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E28B310924AA3AA30038C434 /* AppDelegate.m */; };
 		E28B311524AA3AA50038C434 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E28B311424AA3AA50038C434 /* Assets.xcassets */; };
 		E28B311824AA3AA50038C434 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E28B311624AA3AA50038C434 /* LaunchScreen.storyboard */; };
@@ -21,9 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		25A8CEE711A173A6C148DB80 /* Pods-AppBidding-MoPub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppBidding-MoPub.debug.xcconfig"; path = "Target Support Files/Pods-AppBidding-MoPub/Pods-AppBidding-MoPub.debug.xcconfig"; sourceTree = "<group>"; };
-		3058B627C1480CE483C08F16 /* Pods-AppBidding-MoPub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppBidding-MoPub.release.xcconfig"; path = "Target Support Files/Pods-AppBidding-MoPub/Pods-AppBidding-MoPub.release.xcconfig"; sourceTree = "<group>"; };
-		5A9A011D59BCFF4A924A9F10 /* libPods-AppBidding-MoPub.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AppBidding-MoPub.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		25A8CEE711A173A6C148DB80 /* Pods-AppBidding-MoPub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppBidding-MoPub.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-AppBidding-MoPub/Pods-AppBidding-MoPub.debug.xcconfig"; sourceTree = "<group>"; };
+		26B99A87E3AE84424F00ECFB /* Pods_AppBidding_MoPub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppBidding_MoPub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3058B627C1480CE483C08F16 /* Pods-AppBidding-MoPub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppBidding-MoPub.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-AppBidding-MoPub/Pods-AppBidding-MoPub.release.xcconfig"; sourceTree = "<group>"; };
 		E28B310524AA3AA30038C434 /* AppBidding-MoPub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AppBidding-MoPub.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E28B310824AA3AA30038C434 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E28B310924AA3AA30038C434 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -49,7 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C767F2BABBCD17C6B72CC92 /* libPods-AppBidding-MoPub.a in Frameworks */,
+				1BC0C7A4B32AD8A6FF3D673F /* Pods_AppBidding_MoPub.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +59,7 @@
 		17E12CEC96B8505E180A3677 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5A9A011D59BCFF4A924A9F10 /* libPods-AppBidding-MoPub.a */,
+				26B99A87E3AE84424F00ECFB /* Pods_AppBidding_MoPub.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -126,7 +126,7 @@
 				E28B310124AA3AA30038C434 /* Sources */,
 				E28B310224AA3AA30038C434 /* Frameworks */,
 				E28B310324AA3AA30038C434 /* Resources */,
-				6A90E49F99F26FADE7116CE4 /* [CP] Copy Pods Resources */,
+				F8CD7E31668151DE6E8F0CE2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -183,23 +183,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6A90E49F99F26FADE7116CE4 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AppBidding-MoPub/Pods-AppBidding-MoPub-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AppBidding-MoPub/Pods-AppBidding-MoPub-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppBidding-MoPub/Pods-AppBidding-MoPub-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		D3D4B10422B0B28491B945C1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -220,6 +203,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8CD7E31668151DE6E8F0CE2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppBidding-MoPub/Pods-AppBidding-MoPub-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppBidding-MoPub/Pods-AppBidding-MoPub-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppBidding-MoPub/Pods-AppBidding-MoPub-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

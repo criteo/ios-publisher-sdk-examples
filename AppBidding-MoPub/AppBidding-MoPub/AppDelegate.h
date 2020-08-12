@@ -19,7 +19,6 @@
 
 
 #import <UIKit/UIKit.h>
-#import "MoPub.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

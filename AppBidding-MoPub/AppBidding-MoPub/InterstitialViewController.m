@@ -51,7 +51,6 @@
 }
 
 - (IBAction)displayInterstitial {
-    
     if(self.interstitial.ready) {
         // Ad loaded; play the ad
         [self.interstitial showFromViewController:self];
@@ -62,10 +61,8 @@
 
 //if pre fetch successfully
 -(void)interstitialDidLoadAd:(MPInterstitialAdController *)interstitial {
-    
     self.displayInterstitialButton.enabled = YES;
     [self.displayInterstitialButton setTitle:@"Display Interstitial" forState:UIControlStateNormal];
-    
 }
 
 

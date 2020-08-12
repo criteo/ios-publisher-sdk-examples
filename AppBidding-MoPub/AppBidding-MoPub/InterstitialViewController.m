@@ -20,7 +20,7 @@
 
 #import "InterstitialViewController.h"
 #import "AdConfigurations.h"
-@import CriteoPublisherSdk;
+#import <CriteoPublisherSdk/CriteoPublisherSdk.h>
 
 @interface InterstitialViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *displayInterstitialButton;

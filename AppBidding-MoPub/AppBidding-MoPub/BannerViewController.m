@@ -20,7 +20,7 @@
 
 #import "BannerViewController.h"
 #import "AdConfigurations.h"
-@import CriteoPublisherSdk;
+#import <CriteoPublisherSdk/CriteoPublisherSdk.h>
 
 @interface BannerViewController ()
 

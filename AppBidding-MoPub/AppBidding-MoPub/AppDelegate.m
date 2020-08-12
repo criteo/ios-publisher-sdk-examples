@@ -21,7 +21,7 @@
 #import "AppDelegate.h"
 #import "AdConfigurations.h"
 #import "MoPub.h"
-@import CriteoPublisherSdk;
+#import <CriteoPublisherSdk/CriteoPublisherSdk.h>
 
 @interface AppDelegate ()
 

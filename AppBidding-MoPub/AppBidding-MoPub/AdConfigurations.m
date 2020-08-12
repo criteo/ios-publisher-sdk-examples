@@ -19,7 +19,7 @@
 
 
 #import "AdConfigurations.h"
-@import CriteoPublisherSdk;
+#import <CriteoPublisherSdk/CriteoPublisherSdk.h>
 
 // Here we use MoPub test Ad Unit ID in order to demonstrate the integration
 // If you'd like to see Criteo banner in action, you need to use your own Ad Unit IDs, with Criteo line items targeting the Ad Units.

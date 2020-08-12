@@ -29,7 +29,9 @@
 @implementation BannerViewController
 
 
-// safeAreaInsets will be 0 if executed in viewDidLoad
+// In order to place MPAdView object within safe area
+// (using safeAreaInsets, which is only available after viewDidLoad),
+// we will need to initialize MPAdView in viewDidAppear instead of viewDidLoad
 - (void)viewDidAppear:(BOOL)animated {
 
     // Do any additional setup after loading the view.

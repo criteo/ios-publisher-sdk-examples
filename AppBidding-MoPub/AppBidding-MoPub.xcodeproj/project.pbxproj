@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1BC0C7A4B32AD8A6FF3D673F /* Pods_AppBidding_MoPub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26B99A87E3AE84424F00ECFB /* Pods_AppBidding_MoPub.framework */; };
+		E28B310A24AA3AA30038C434 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E28B310924AA3AA30038C434 /* AppDelegate.m */; };
+		E28B311524AA3AA50038C434 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E28B311424AA3AA50038C434 /* Assets.xcassets */; };
+		E28B311824AA3AA50038C434 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E28B311624AA3AA50038C434 /* LaunchScreen.storyboard */; };
+		E28B311B24AA3AA50038C434 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E28B311A24AA3AA50038C434 /* main.m */; };
+		E28B312224AA3B300038C434 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E28B312124AA3B300038C434 /* Main.storyboard */; };
+		E28B312524AA5EF80038C434 /* AdConfigurations.m in Sources */ = {isa = PBXBuildFile; fileRef = E28B312424AA5EF80038C434 /* AdConfigurations.m */; };
+		E28B312724AA7F0E0038C434 /* BannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E28B312624AA7F0E0038C434 /* BannerViewController.m */; };
+		E28B312C24ABC5340038C434 /* CriteoSample.m in Sources */ = {isa = PBXBuildFile; fileRef = E28B312B24ABC5340038C434 /* CriteoSample.m */; };
+		E28B312E24ABC58E0038C434 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E28B312D24ABC58E0038C434 /* HomeViewController.m */; };
+		E2DC72F124AEDA4B0091BF69 /* InterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DC72F024AEDA4B0091BF69 /* InterstitialViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		25A8CEE711A173A6C148DB80 /* Pods-AppBidding-MoPub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppBidding-MoPub.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-AppBidding-MoPub/Pods-AppBidding-MoPub.debug.xcconfig"; sourceTree = "<group>"; };
+		26B99A87E3AE84424F00ECFB /* Pods_AppBidding_MoPub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppBidding_MoPub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3058B627C1480CE483C08F16 /* Pods-AppBidding-MoPub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppBidding-MoPub.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-AppBidding-MoPub/Pods-AppBidding-MoPub.release.xcconfig"; sourceTree = "<group>"; };
+		E28B310524AA3AA30038C434 /* AppBidding-MoPub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AppBidding-MoPub.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E28B310824AA3AA30038C434 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E28B310924AA3AA30038C434 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E28B311424AA3AA50038C434 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E28B311724AA3AA50038C434 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E28B311924AA3AA50038C434 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E28B311A24AA3AA50038C434 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E28B312124AA3B300038C434 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		E28B312324AA5BCC0038C434 /* AdConfigurations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdConfigurations.h; sourceTree = "<group>"; };
+		E28B312424AA5EF80038C434 /* AdConfigurations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdConfigurations.m; sourceTree = "<group>"; };
+		E28B312624AA7F0E0038C434 /* BannerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BannerViewController.m; sourceTree = "<group>"; };
+		E28B312824ABB9920038C434 /* BannerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BannerViewController.h; sourceTree = "<group>"; };
+		E28B312924ABC4C80038C434 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		E28B312A24ABC5340038C434 /* CriteoSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CriteoSample.h; sourceTree = "<group>"; };
+		E28B312B24ABC5340038C434 /* CriteoSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CriteoSample.m; sourceTree = "<group>"; };
+		E28B312D24ABC58E0038C434 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		E2DC72EF24AED9F90091BF69 /* InterstitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterstitialViewController.h; sourceTree = "<group>"; };
+		E2DC72F024AEDA4B0091BF69 /* InterstitialViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterstitialViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E28B310224AA3AA30038C434 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BC0C7A4B32AD8A6FF3D673F /* Pods_AppBidding_MoPub.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17E12CEC96B8505E180A3677 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				26B99A87E3AE84424F00ECFB /* Pods_AppBidding_MoPub.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		32B8779753744D2939F6EFB7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				25A8CEE711A173A6C148DB80 /* Pods-AppBidding-MoPub.debug.xcconfig */,
+				3058B627C1480CE483C08F16 /* Pods-AppBidding-MoPub.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E28B30FC24AA3AA30038C434 = {
+			isa = PBXGroup;
+			children = (
+				E28B310724AA3AA30038C434 /* AppBidding-MoPub */,
+				E28B310624AA3AA30038C434 /* Products */,
+				32B8779753744D2939F6EFB7 /* Pods */,
+				17E12CEC96B8505E180A3677 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E28B310624AA3AA30038C434 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E28B310524AA3AA30038C434 /* AppBidding-MoPub.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E28B310724AA3AA30038C434 /* AppBidding-MoPub */ = {
+			isa = PBXGroup;
+			children = (
+				E28B310824AA3AA30038C434 /* AppDelegate.h */,
+				E28B310924AA3AA30038C434 /* AppDelegate.m */,
+				E28B312324AA5BCC0038C434 /* AdConfigurations.h */,
+				E28B312424AA5EF80038C434 /* AdConfigurations.m */,
+				E28B312A24ABC5340038C434 /* CriteoSample.h */,
+				E28B312B24ABC5340038C434 /* CriteoSample.m */,
+				E28B312924ABC4C80038C434 /* HomeViewController.h */,
+				E28B312D24ABC58E0038C434 /* HomeViewController.m */,
+				E28B312824ABB9920038C434 /* BannerViewController.h */,
+				E28B312624AA7F0E0038C434 /* BannerViewController.m */,
+				E2DC72EF24AED9F90091BF69 /* InterstitialViewController.h */,
+				E2DC72F024AEDA4B0091BF69 /* InterstitialViewController.m */,
+				E28B312124AA3B300038C434 /* Main.storyboard */,
+				E28B311424AA3AA50038C434 /* Assets.xcassets */,
+				E28B311624AA3AA50038C434 /* LaunchScreen.storyboard */,
+				E28B311924AA3AA50038C434 /* Info.plist */,
+				E28B311A24AA3AA50038C434 /* main.m */,
+			);
+			path = "AppBidding-MoPub";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E28B310424AA3AA30038C434 /* AppBidding-MoPub */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E28B311E24AA3AA50038C434 /* Build configuration list for PBXNativeTarget "AppBidding-MoPub" */;
+			buildPhases = (
+				D3D4B10422B0B28491B945C1 /* [CP] Check Pods Manifest.lock */,
+				E28B310124AA3AA30038C434 /* Sources */,
+				E28B310224AA3AA30038C434 /* Frameworks */,
+				E28B310324AA3AA30038C434 /* Resources */,
+				F8CD7E31668151DE6E8F0CE2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AppBidding-MoPub";
+			productName = "AppBidding-MoPub";
+			productReference = E28B310524AA3AA30038C434 /* AppBidding-MoPub.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E28B30FD24AA3AA30038C434 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = Abdoul;
+				TargetAttributes = {
+					E28B310424AA3AA30038C434 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = E28B310024AA3AA30038C434 /* Build configuration list for PBXProject "AppBidding-MoPub" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E28B30FC24AA3AA30038C434;
+			productRefGroup = E28B310624AA3AA30038C434 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E28B310424AA3AA30038C434 /* AppBidding-MoPub */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E28B310324AA3AA30038C434 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E28B311824AA3AA50038C434 /* LaunchScreen.storyboard in Resources */,
+				E28B311524AA3AA50038C434 /* Assets.xcassets in Resources */,
+				E28B312224AA3B300038C434 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D3D4B10422B0B28491B945C1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AppBidding-MoPub-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8CD7E31668151DE6E8F0CE2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppBidding-MoPub/Pods-AppBidding-MoPub-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppBidding-MoPub/Pods-AppBidding-MoPub-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppBidding-MoPub/Pods-AppBidding-MoPub-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E28B310124AA3AA30038C434 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E28B312524AA5EF80038C434 /* AdConfigurations.m in Sources */,
+				E28B312C24ABC5340038C434 /* CriteoSample.m in Sources */,
+				E28B312724AA7F0E0038C434 /* BannerViewController.m in Sources */,
+				E28B310A24AA3AA30038C434 /* AppDelegate.m in Sources */,
+				E28B311B24AA3AA50038C434 /* main.m in Sources */,
+				E2DC72F124AEDA4B0091BF69 /* InterstitialViewController.m in Sources */,
+				E28B312E24ABC58E0038C434 /* HomeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E28B311624AA3AA50038C434 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E28B311724AA3AA50038C434 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E28B311C24AA3AA50038C434 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E28B311D24AA3AA50038C434 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E28B311F24AA3AA50038C434 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25A8CEE711A173A6C148DB80 /* Pods-AppBidding-MoPub.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S655EV5659;
+				INFOPLIST_FILE = "AppBidding-MoPub/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.criteo.samples.AppBidding-MoPub";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E28B312024AA3AA50038C434 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3058B627C1480CE483C08F16 /* Pods-AppBidding-MoPub.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S655EV5659;
+				INFOPLIST_FILE = "AppBidding-MoPub/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.criteo.samples.AppBidding-MoPub";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E28B310024AA3AA30038C434 /* Build configuration list for PBXProject "AppBidding-MoPub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E28B311C24AA3AA50038C434 /* Debug */,
+				E28B311D24AA3AA50038C434 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E28B311E24AA3AA50038C434 /* Build configuration list for PBXNativeTarget "AppBidding-MoPub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E28B311F24AA3AA50038C434 /* Debug */,
+				E28B312024AA3AA50038C434 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E28B30FD24AA3AA30038C434 /* Project object */;
+}

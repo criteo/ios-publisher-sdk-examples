@@ -20,6 +20,7 @@
 #import "HomeViewController.h"
 #import "BannerViewController.h"
 #import "InterstitialViewController.h"
+#import "NativeSimpleViewController.h"
 #import "CriteoSample.h"
 
 @interface HomeViewController () <UITableViewDelegate, UITableViewDataSource>
@@ -38,7 +39,8 @@
     
     self.samples = [NSMutableArray arrayWithObjects:
         [[CriteoSample alloc] initWithLabel:@"Banner Samples" AndSegueId:@"BannerSampleSegue"],
-        [[CriteoSample alloc] initWithLabel:@"Interstitial Samples" AndSegueId:@"InterstitialSampleSegue"], nil];
+        [[CriteoSample alloc] initWithLabel:@"Interstitial Samples" AndSegueId:@"InterstitialSampleSegue"],
+        [[CriteoSample alloc] initWithLabel:@"Native Sample (Simple)" AndSegueId:@"NativeSimpleSampleSegue"], nil];
 
     self.cellReuseIdentifier = @"cell";
 

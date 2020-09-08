@@ -1,5 +1,5 @@
 //
-//  AdConfigurations.h
+//  CriteoNativeAdView.m
 //  Standalone
 //
 //  Copyright © 2020 Criteo. All rights reserved.
@@ -16,21 +16,8 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 //
+#import "CriteoNativeAdView.h"
 
-#import <Foundation/Foundation.h>
-#import <CriteoPublisherSdk/CriteoPublisherSdk.h>
-
-NS_ASSUME_NONNULL_BEGIN
-
-@interface AdConfigurations : NSObject
-
-# pragma mark - Criteo
-
-+ (NSString*) criteoPublisherId;
-+ (CRBannerAdUnit *)criteoBannerAdUnit;
-+ (CRInterstitialAdUnit *)criteoInterstitialAdUnit;
-+ (CRNativeAdUnit *)criteoNativeAdUnit;
+@implementation CriteoNativeAdView
 
 @end
-
-NS_ASSUME_NONNULL_END

@@ -60,6 +60,7 @@
                         <outlet property="tableView" destination="i1z-fz-Ypw" id="HGy-ba-bX0"/>
                         <segue destination="BM5-uo-64l" kind="show" identifier="BannerSampleSegue" id="Oxo-hk-zQ5"/>
                         <segue destination="1fS-46-dCO" kind="show" identifier="InterstitialSampleSegue" id="toZ-er-rSU"/>
+                        <segue destination="baG-0a-Chs" kind="show" identifier="NativeSimpleSampleSegue" id="QhT-QE-Rpy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -185,6 +186,94 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="boP-vs-FCJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2391" y="138"/>
+        </scene>
+        <!--Native Sample (Simple) - Standalone-->
+        <scene sceneID="AHM-gj-MLz">
+            <objects>
+                <viewController id="baG-0a-Chs" customClass="NativeSimpleViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mzz-Dk-kp6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Native Loader" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cGX-ni-qMZ">
+                                <rect key="frame" x="20" y="84" width="374" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Load Criteo Native with CRNativeLoader" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbc-v3-oQG">
+                                <rect key="frame" x="20" y="122.99999999999999" width="374" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Native Ad Listener" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zcR-iC-T5G">
+                                <rect key="frame" x="20" y="183.33333333333334" width="374" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prepare to create native view when native ad is received" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4p-AR-KsE">
+                                <rect key="frame" x="20" y="222.33333333333334" width="374" height="40.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Native Renderer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ip5-ez-o17">
+                                <rect key="frame" x="20" y="303" width="374" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inflate your native layout and render ad assets" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mTy-Mz-G4b">
+                                <rect key="frame" x="20" y="342" width="374" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="19p-1f-Oih">
+                                <rect key="frame" x="0.0" y="596" width="414" height="140"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="rd2-fc-68i"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="pbc-v3-oQG" firstAttribute="leading" secondItem="Xd8-ZH-kvK" secondAttribute="leading" constant="20" id="2NF-E0-MkN"/>
+                            <constraint firstItem="X4p-AR-KsE" firstAttribute="top" secondItem="zcR-iC-T5G" secondAttribute="bottom" constant="10" id="4Ax-VY-tww"/>
+                            <constraint firstItem="19p-1f-Oih" firstAttribute="bottom" secondItem="Xd8-ZH-kvK" secondAttribute="bottom" id="4vN-7f-LX5"/>
+                            <constraint firstItem="mTy-Mz-G4b" firstAttribute="top" secondItem="Ip5-ez-o17" secondAttribute="bottom" constant="10" id="5c8-1M-gKE"/>
+                            <constraint firstItem="19p-1f-Oih" firstAttribute="leading" secondItem="Xd8-ZH-kvK" secondAttribute="leading" id="AY6-HL-Dbz"/>
+                            <constraint firstItem="zcR-iC-T5G" firstAttribute="leading" secondItem="Xd8-ZH-kvK" secondAttribute="leading" constant="20" id="DDn-ms-3OD"/>
+                            <constraint firstItem="19p-1f-Oih" firstAttribute="centerX" secondItem="Mzz-Dk-kp6" secondAttribute="centerX" id="Eu8-Uy-OdM"/>
+                            <constraint firstItem="zcR-iC-T5G" firstAttribute="top" secondItem="pbc-v3-oQG" secondAttribute="bottom" constant="40" id="Fsm-cM-kZc"/>
+                            <constraint firstItem="Xd8-ZH-kvK" firstAttribute="trailing" secondItem="cGX-ni-qMZ" secondAttribute="trailing" constant="20" id="OG3-ve-drZ"/>
+                            <constraint firstItem="mTy-Mz-G4b" firstAttribute="leading" secondItem="Xd8-ZH-kvK" secondAttribute="leading" constant="20" id="dWr-nj-bxl"/>
+                            <constraint firstItem="Xd8-ZH-kvK" firstAttribute="trailing" secondItem="pbc-v3-oQG" secondAttribute="trailing" constant="20" id="eCf-ZT-YOv"/>
+                            <constraint firstItem="X4p-AR-KsE" firstAttribute="leading" secondItem="Xd8-ZH-kvK" secondAttribute="leading" constant="20" id="ebg-fA-Tog"/>
+                            <constraint firstItem="cGX-ni-qMZ" firstAttribute="leading" secondItem="Xd8-ZH-kvK" secondAttribute="leading" constant="20" id="efe-jn-7ZV"/>
+                            <constraint firstItem="pbc-v3-oQG" firstAttribute="top" secondItem="cGX-ni-qMZ" secondAttribute="bottom" constant="10" id="g7K-OP-10b"/>
+                            <constraint firstItem="Ip5-ez-o17" firstAttribute="top" secondItem="X4p-AR-KsE" secondAttribute="bottom" constant="40" id="img-VI-3Ft"/>
+                            <constraint firstItem="Xd8-ZH-kvK" firstAttribute="trailing" secondItem="zcR-iC-T5G" secondAttribute="trailing" constant="20" id="q7r-mO-i0m"/>
+                            <constraint firstItem="Ip5-ez-o17" firstAttribute="leading" secondItem="Xd8-ZH-kvK" secondAttribute="leading" constant="20" id="qOQ-A6-LyQ"/>
+                            <constraint firstItem="Xd8-ZH-kvK" firstAttribute="trailing" secondItem="Ip5-ez-o17" secondAttribute="trailing" constant="20" id="r7H-wa-qyD"/>
+                            <constraint firstItem="Xd8-ZH-kvK" firstAttribute="trailing" secondItem="mTy-Mz-G4b" secondAttribute="trailing" constant="20" id="rwG-wu-9fU"/>
+                            <constraint firstItem="cGX-ni-qMZ" firstAttribute="top" secondItem="Xd8-ZH-kvK" secondAttribute="top" constant="40" id="uLT-Ec-lfs"/>
+                            <constraint firstItem="19p-1f-Oih" firstAttribute="trailing" secondItem="Xd8-ZH-kvK" secondAttribute="trailing" id="uP0-56-aXq"/>
+                            <constraint firstItem="Xd8-ZH-kvK" firstAttribute="trailing" secondItem="X4p-AR-KsE" secondAttribute="trailing" constant="20" id="yfo-Vt-b13"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Xd8-ZH-kvK"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Native Sample (Simple) - Standalone" id="m45-oX-AQu"/>
+                    <connections>
+                        <outlet property="nativePlaceholder" destination="19p-1f-Oih" id="s3T-3n-Xo0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wmb-eL-q3G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3050.7246376811595" y="136.95652173913044"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ua3-nz-9fV">

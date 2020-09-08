@@ -1,5 +1,5 @@
 //
-//  AppDelegate.m
+//  CriteoNativeAdView.h
 //  Standalone
 //
 //  Copyright © 2020 Criteo. All rights reserved.
@@ -17,29 +17,18 @@
 // limitations under the License.
 //
 
-#import "AppDelegate.h"
-#import "AdConfigurations.h"
 #import <CriteoPublisherSdk/CriteoPublisherSdk.h>
 
-@interface AppDelegate ()
+NS_ASSUME_NONNULL_BEGIN
+
+@interface CriteoNativeAdView : CRNativeAdView
+
+@property (weak, nonatomic) IBOutlet CRMediaView *productMediaView;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *descriptionLabel;
+@property (weak, nonatomic) IBOutlet UILabel *attributionLabel;
+@property (weak, nonatomic) IBOutlet UIButton *clickToActionButton;
 
 @end
 
-@implementation AppDelegate
-
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-    NSArray *adUnits = @[
-        [AdConfigurations criteoBannerAdUnit],
-        [AdConfigurations criteoInterstitialAdUnit],
-        [AdConfigurations criteoNativeAdUnit]
-    ];
-    // Register Criteo SDK as early as possible
-    [[Criteo sharedCriteo] registerCriteoPublisherId:[AdConfigurations criteoPublisherId] withAdUnits:adUnits];
-
-    return YES;
-}
-
-
-@end
+NS_ASSUME_NONNULL_END

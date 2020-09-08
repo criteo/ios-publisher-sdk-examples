@@ -18,6 +18,12 @@
 		B192C78424D933E6008CE267 /* CriteoSample.m in Sources */ = {isa = PBXBuildFile; fileRef = B192C78324D933E6008CE267 /* CriteoSample.m */; };
 		B192C78724D935C8008CE267 /* BannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B192C78624D935C8008CE267 /* BannerViewController.m */; };
 		B192C78A24D935D8008CE267 /* InterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B192C78924D935D8008CE267 /* InterstitialViewController.m */; };
+		B196E6DB2507DADD00BFCFFC /* NativeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B196E6DA2507DADD00BFCFFC /* NativeTableViewController.m */; };
+		B196E6DF2507DBA600BFCFFC /* NativeAdTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B196E6DD2507DBA600BFCFFC /* NativeAdTableViewCell.m */; };
+		B196E6E02507DBA600BFCFFC /* NativeAdTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B196E6DE2507DBA600BFCFFC /* NativeAdTableViewCell.xib */; };
+		B196E6E42507DBD400BFCFFC /* ContentItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B196E6E22507DBD400BFCFFC /* ContentItemTableViewCell.m */; };
+		B196E6E52507DBD400BFCFFC /* ContentItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B196E6E32507DBD400BFCFFC /* ContentItemTableViewCell.xib */; };
+		B196E6E82507DBF200BFCFFC /* ContentItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B196E6E72507DBF200BFCFFC /* ContentItem.m */; };
 		B1D779282507D121001F83A5 /* NativeSimpleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D779272507D121001F83A5 /* NativeSimpleViewController.m */; };
 		B1D779312507D27F001F83A5 /* CriteoNativeAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1D7792F2507D27F001F83A5 /* CriteoNativeAdView.xib */; };
 		B1D779322507D27F001F83A5 /* CriteoNativeAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D779302507D27F001F83A5 /* CriteoNativeAdView.m */; };
@@ -45,6 +51,16 @@
 		B192C78624D935C8008CE267 /* BannerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BannerViewController.m; sourceTree = "<group>"; };
 		B192C78824D935D8008CE267 /* InterstitialViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterstitialViewController.h; sourceTree = "<group>"; };
 		B192C78924D935D8008CE267 /* InterstitialViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterstitialViewController.m; sourceTree = "<group>"; };
+		B196E6D92507DADD00BFCFFC /* NativeTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativeTableViewController.h; sourceTree = "<group>"; };
+		B196E6DA2507DADD00BFCFFC /* NativeTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NativeTableViewController.m; sourceTree = "<group>"; };
+		B196E6DC2507DBA600BFCFFC /* NativeAdTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativeAdTableViewCell.h; sourceTree = "<group>"; };
+		B196E6DD2507DBA600BFCFFC /* NativeAdTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NativeAdTableViewCell.m; sourceTree = "<group>"; };
+		B196E6DE2507DBA600BFCFFC /* NativeAdTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NativeAdTableViewCell.xib; sourceTree = "<group>"; };
+		B196E6E12507DBD400BFCFFC /* ContentItemTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContentItemTableViewCell.h; sourceTree = "<group>"; };
+		B196E6E22507DBD400BFCFFC /* ContentItemTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContentItemTableViewCell.m; sourceTree = "<group>"; };
+		B196E6E32507DBD400BFCFFC /* ContentItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentItemTableViewCell.xib; sourceTree = "<group>"; };
+		B196E6E62507DBF200BFCFFC /* ContentItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContentItem.h; sourceTree = "<group>"; };
+		B196E6E72507DBF200BFCFFC /* ContentItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContentItem.m; sourceTree = "<group>"; };
 		B1D779262507D121001F83A5 /* NativeSimpleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativeSimpleViewController.h; sourceTree = "<group>"; };
 		B1D779272507D121001F83A5 /* NativeSimpleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NativeSimpleViewController.m; sourceTree = "<group>"; };
 		B1D7792E2507D27F001F83A5 /* CriteoNativeAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CriteoNativeAdView.h; sourceTree = "<group>"; };
@@ -115,11 +131,21 @@
 				B192C78624D935C8008CE267 /* BannerViewController.m */,
 				B192C78824D935D8008CE267 /* InterstitialViewController.h */,
 				B192C78924D935D8008CE267 /* InterstitialViewController.m */,
-				B1D779262507D121001F83A5 /* NativeSimpleViewController.h */,
-				B1D779272507D121001F83A5 /* NativeSimpleViewController.m */,
 				B1D7792E2507D27F001F83A5 /* CriteoNativeAdView.h */,
 				B1D779302507D27F001F83A5 /* CriteoNativeAdView.m */,
 				B1D7792F2507D27F001F83A5 /* CriteoNativeAdView.xib */,
+				B1D779262507D121001F83A5 /* NativeSimpleViewController.h */,
+				B1D779272507D121001F83A5 /* NativeSimpleViewController.m */,
+				B196E6E62507DBF200BFCFFC /* ContentItem.h */,
+				B196E6E72507DBF200BFCFFC /* ContentItem.m */,
+				B196E6E12507DBD400BFCFFC /* ContentItemTableViewCell.h */,
+				B196E6E22507DBD400BFCFFC /* ContentItemTableViewCell.m */,
+				B196E6E32507DBD400BFCFFC /* ContentItemTableViewCell.xib */,
+				B196E6DC2507DBA600BFCFFC /* NativeAdTableViewCell.h */,
+				B196E6DD2507DBA600BFCFFC /* NativeAdTableViewCell.m */,
+				B196E6DE2507DBA600BFCFFC /* NativeAdTableViewCell.xib */,
+				B196E6D92507DADD00BFCFFC /* NativeTableViewController.h */,
+				B196E6DA2507DADD00BFCFFC /* NativeTableViewController.m */,
 				B170F9D024D12A1C003E8BEF /* Main.storyboard */,
 				B170F9D324D12A1D003E8BEF /* Assets.xcassets */,
 				B170F9D524D12A1D003E8BEF /* LaunchScreen.storyboard */,
@@ -188,10 +214,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B196E6E52507DBD400BFCFFC /* ContentItemTableViewCell.xib in Resources */,
 				B1D779312507D27F001F83A5 /* CriteoNativeAdView.xib in Resources */,
 				B170F9D724D12A1D003E8BEF /* LaunchScreen.storyboard in Resources */,
 				B170F9D424D12A1D003E8BEF /* Assets.xcassets in Resources */,
 				B170F9D224D12A1C003E8BEF /* Main.storyboard in Resources */,
+				B196E6E02507DBA600BFCFFC /* NativeAdTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,14 +255,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B196E6E82507DBF200BFCFFC /* ContentItem.m in Sources */,
 				B192C78124D93121008CE267 /* AdConfigurations.m in Sources */,
 				B192C78424D933E6008CE267 /* CriteoSample.m in Sources */,
+				B196E6E42507DBD400BFCFFC /* ContentItemTableViewCell.m in Sources */,
 				B170F9C924D12A1C003E8BEF /* AppDelegate.m in Sources */,
 				B170F9DA24D12A1D003E8BEF /* main.m in Sources */,
 				B191A9E124D92B3100E4FF91 /* HomeViewController.m in Sources */,
 				B192C78724D935C8008CE267 /* BannerViewController.m in Sources */,
+				B196E6DB2507DADD00BFCFFC /* NativeTableViewController.m in Sources */,
 				B192C78A24D935D8008CE267 /* InterstitialViewController.m in Sources */,
 				B1D779322507D27F001F83A5 /* CriteoNativeAdView.m in Sources */,
+				B196E6DF2507DBA600BFCFFC /* NativeAdTableViewCell.m in Sources */,
 				B1D779282507D121001F83A5 /* NativeSimpleViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

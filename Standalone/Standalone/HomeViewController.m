@@ -40,7 +40,8 @@
     self.samples = [NSMutableArray arrayWithObjects:
         [[CriteoSample alloc] initWithLabel:@"Banner Samples" AndSegueId:@"BannerSampleSegue"],
         [[CriteoSample alloc] initWithLabel:@"Interstitial Samples" AndSegueId:@"InterstitialSampleSegue"],
-        [[CriteoSample alloc] initWithLabel:@"Native Sample (Simple)" AndSegueId:@"NativeSimpleSampleSegue"], nil];
+        [[CriteoSample alloc] initWithLabel:@"Native Sample (Simple)" AndSegueId:@"NativeSimpleSampleSegue"],
+        [[CriteoSample alloc] initWithLabel:@"Native Sample (Table)" AndSegueId:@"NativeTableSampleSegue"], nil];
 
     self.cellReuseIdentifier = @"cell";
 

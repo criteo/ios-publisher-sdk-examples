@@ -61,6 +61,7 @@
                         <segue destination="BM5-uo-64l" kind="show" identifier="BannerSampleSegue" id="Oxo-hk-zQ5"/>
                         <segue destination="1fS-46-dCO" kind="show" identifier="InterstitialSampleSegue" id="toZ-er-rSU"/>
                         <segue destination="baG-0a-Chs" kind="show" identifier="NativeSimpleSampleSegue" id="QhT-QE-Rpy"/>
+                        <segue destination="evs-Qk-SZl" kind="show" identifier="NativeTableSampleSegue" id="V0c-Xh-Hoi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -274,6 +275,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wmb-eL-q3G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3050.7246376811595" y="136.95652173913044"/>
+        </scene>
+        <!--Native Sample (Table) - Standalone-->
+        <scene sceneID="b76-pT-Gfy">
+            <objects>
+                <tableViewController id="evs-Qk-SZl" customClass="NativeTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="i4O-yt-VaR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="evs-Qk-SZl" id="kDd-CD-sFc"/>
+                            <outlet property="delegate" destination="evs-Qk-SZl" id="Ar0-Bc-jXo"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Native Sample (Table) - Standalone" id="mF4-yi-VNd"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Trl-1j-jLZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3748" y="138"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ua3-nz-9fV">

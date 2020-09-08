@@ -1,5 +1,5 @@
 //
-//  AdConfigurations.h
+//  CriteoNativeAdView.m
 //  Standalone
 //
 //  Copyright © 2020 Criteo. All rights reserved.
@@ -16,21 +16,16 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 //
+#import "CriteoNativeAdView.h"
 
-#import <Foundation/Foundation.h>
-#import <CriteoPublisherSdk/CriteoPublisherSdk.h>
+@implementation CriteoNativeAdView
 
-NS_ASSUME_NONNULL_BEGIN
-
-@interface AdConfigurations : NSObject
-
-# pragma mark - Criteo
-
-+ (NSString*) criteoPublisherId;
-+ (CRBannerAdUnit *)criteoBannerAdUnit;
-+ (CRInterstitialAdUnit *)criteoInterstitialAdUnit;
-+ (CRNativeAdUnit *)criteoNativeAdUnit;
+/*
+// Only override drawRect: if you perform custom drawing.
+// An empty implementation adversely affects performance during animation.
+- (void)drawRect:(CGRect)rect {
+    // Drawing code
+}
+*/
 
 @end
-
-NS_ASSUME_NONNULL_END

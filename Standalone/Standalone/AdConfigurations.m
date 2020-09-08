@@ -27,9 +27,11 @@ static NSString* const criteoPublisherId = @"B-000000";
 // Here we use test Criteo Ad Unit IDs in order to return test ads
 static NSString* const criteoBannerAdUnitId = @"30s6zt3ayypfyemwjvmp";
 static NSString* const criteoInterstitialAdUnitId = @"6yws53jyfjgoq1ghnuqb";
+static NSString* const criteoNativeAdUnitId = @"190tsfngohsvfkh3hmkm";
 
 static CRBannerAdUnit *criteoBannerAdUnit;
 static CRInterstitialAdUnit *criteoInterstitialAdUnit;
+static CRNativeAdUnit *criteoNativeAdUnit;
 
 @implementation AdConfigurations
 
@@ -51,6 +53,13 @@ static CRInterstitialAdUnit *criteoInterstitialAdUnit;
         criteoInterstitialAdUnit = [[CRInterstitialAdUnit alloc] initWithAdUnitId:criteoInterstitialAdUnitId];
     }
     return criteoInterstitialAdUnit;
+}
+
++ (CRNativeAdUnit *)criteoNativeAdUnit {
+    if (criteoNativeAdUnit == nil) {
+        criteoNativeAdUnit = [[CRNativeAdUnit alloc] initWithAdUnitId:criteoNativeAdUnitId];
+    }
+    return criteoNativeAdUnit;
 }
 
 @end

@@ -131,6 +131,19 @@
 				B192C78624D935C8008CE267 /* BannerViewController.m */,
 				B192C78824D935D8008CE267 /* InterstitialViewController.h */,
 				B192C78924D935D8008CE267 /* InterstitialViewController.m */,
+				B198BC21253304E900B3DB4D /* AdvancedNative */,
+				B170F9D024D12A1C003E8BEF /* Main.storyboard */,
+				B170F9D324D12A1D003E8BEF /* Assets.xcassets */,
+				B170F9D524D12A1D003E8BEF /* LaunchScreen.storyboard */,
+				B170F9D824D12A1D003E8BEF /* Info.plist */,
+				B170F9D924D12A1D003E8BEF /* main.m */,
+			);
+			path = Standalone;
+			sourceTree = "<group>";
+		};
+		B198BC21253304E900B3DB4D /* AdvancedNative */ = {
+			isa = PBXGroup;
+			children = (
 				B1D7792E2507D27F001F83A5 /* CriteoNativeAdView.h */,
 				B1D779302507D27F001F83A5 /* CriteoNativeAdView.m */,
 				B1D7792F2507D27F001F83A5 /* CriteoNativeAdView.xib */,
@@ -146,13 +159,8 @@
 				B196E6DE2507DBA600BFCFFC /* NativeAdTableViewCell.xib */,
 				B196E6D92507DADD00BFCFFC /* NativeTableViewController.h */,
 				B196E6DA2507DADD00BFCFFC /* NativeTableViewController.m */,
-				B170F9D024D12A1C003E8BEF /* Main.storyboard */,
-				B170F9D324D12A1D003E8BEF /* Assets.xcassets */,
-				B170F9D524D12A1D003E8BEF /* LaunchScreen.storyboard */,
-				B170F9D824D12A1D003E8BEF /* Info.plist */,
-				B170F9D924D12A1D003E8BEF /* main.m */,
 			);
-			path = Standalone;
+			path = AdvancedNative;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -10,6 +10,7 @@
 		1BC0C7A4B32AD8A6FF3D673F /* Pods_AppBidding_MoPub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26B99A87E3AE84424F00ECFB /* Pods_AppBidding_MoPub.framework */; };
 		914B1EE625760EBC0054FDEF /* CriteoPublisherSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 914B1EE525760EBC0054FDEF /* CriteoPublisherSdk.framework */; };
 		914B1EE725760EBC0054FDEF /* CriteoPublisherSdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 914B1EE525760EBC0054FDEF /* CriteoPublisherSdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		914B1F072576132E0054FDEF /* Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914B1F062576132E0054FDEF /* Empty.swift */; };
 		E28B310A24AA3AA30038C434 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E28B310924AA3AA30038C434 /* AppDelegate.m */; };
 		E28B311524AA3AA50038C434 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E28B311424AA3AA50038C434 /* Assets.xcassets */; };
 		E28B311824AA3AA50038C434 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E28B311624AA3AA50038C434 /* LaunchScreen.storyboard */; };
@@ -41,6 +42,7 @@
 		26B99A87E3AE84424F00ECFB /* Pods_AppBidding_MoPub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppBidding_MoPub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3058B627C1480CE483C08F16 /* Pods-AppBidding-MoPub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppBidding-MoPub.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-AppBidding-MoPub/Pods-AppBidding-MoPub.release.xcconfig"; sourceTree = "<group>"; };
 		914B1EE525760EBC0054FDEF /* CriteoPublisherSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CriteoPublisherSdk.framework; path = "AppBidding-MoPub/CriteoPublisherSdk.framework"; sourceTree = "<group>"; };
+		914B1F062576132E0054FDEF /* Empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empty.swift; sourceTree = "<group>"; };
 		E28B310524AA3AA30038C434 /* AppBidding-MoPub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AppBidding-MoPub.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E28B310824AA3AA30038C434 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E28B310924AA3AA30038C434 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				E28B311624AA3AA50038C434 /* LaunchScreen.storyboard */,
 				E28B311924AA3AA50038C434 /* Info.plist */,
 				E28B311A24AA3AA50038C434 /* main.m */,
+				914B1F062576132E0054FDEF /* Empty.swift */,
 			);
 			path = "AppBidding-MoPub";
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 				TargetAttributes = {
 					E28B310424AA3AA30038C434 = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1220;
 					};
 				};
 			};
@@ -254,6 +258,7 @@
 				E28B312724AA7F0E0038C434 /* BannerViewController.m in Sources */,
 				E28B310A24AA3AA30038C434 /* AppDelegate.m in Sources */,
 				E28B311B24AA3AA50038C434 /* main.m in Sources */,
+				914B1F072576132E0054FDEF /* Empty.swift in Sources */,
 				E2DC72F124AEDA4B0091BF69 /* InterstitialViewController.m in Sources */,
 				E28B312E24ABC58E0038C434 /* HomeViewController.m in Sources */,
 			);
@@ -388,6 +393,7 @@
 			baseConfigurationReference = 25A8CEE711A173A6C148DB80 /* Pods-AppBidding-MoPub.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = S655EV5659;
@@ -407,6 +413,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.criteo.samples.AppBidding-MoPub";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -416,6 +424,7 @@
 			baseConfigurationReference = 3058B627C1480CE483C08F16 /* Pods-AppBidding-MoPub.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = S655EV5659;
@@ -435,6 +444,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.criteo.samples.AppBidding-MoPub";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

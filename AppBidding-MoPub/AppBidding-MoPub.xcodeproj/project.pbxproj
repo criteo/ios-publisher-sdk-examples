@@ -401,6 +401,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 3.10.0.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.criteo.samples.AppBidding-MoPub";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -425,6 +429,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 3.10.0.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.criteo.samples.AppBidding-MoPub";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

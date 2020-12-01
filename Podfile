@@ -19,7 +19,10 @@ target 'AppBidding-MoPub' do
   use_frameworks!
 
   pod 'mopub-ios-sdk', '~> 5.13.0'
-  pod 'CriteoPublisherSdk', '~> 3.10.0'
+  # To use a different major Criteo SDK version for just a single project,
+  # we need manual installation. Once all projects are upgraded to v4,
+  # we can switch back to Cocoapods by removing the comment below
+  #pod 'CriteoPublisherSdk', '~> 4.0.3'
 end
 
 target 'Standalone' do

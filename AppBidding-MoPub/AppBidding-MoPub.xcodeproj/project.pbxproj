@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1BC0C7A4B32AD8A6FF3D673F /* Pods_AppBidding_MoPub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26B99A87E3AE84424F00ECFB /* Pods_AppBidding_MoPub.framework */; };
+		914B1EE625760EBC0054FDEF /* CriteoPublisherSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 914B1EE525760EBC0054FDEF /* CriteoPublisherSdk.framework */; };
+		914B1EE725760EBC0054FDEF /* CriteoPublisherSdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 914B1EE525760EBC0054FDEF /* CriteoPublisherSdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E28B310A24AA3AA30038C434 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E28B310924AA3AA30038C434 /* AppDelegate.m */; };
 		E28B311524AA3AA50038C434 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E28B311424AA3AA50038C434 /* Assets.xcassets */; };
 		E28B311824AA3AA50038C434 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E28B311624AA3AA50038C434 /* LaunchScreen.storyboard */; };
@@ -20,10 +22,25 @@
 		E2DC72F124AEDA4B0091BF69 /* InterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DC72F024AEDA4B0091BF69 /* InterstitialViewController.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		914B1EE825760EBC0054FDEF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				914B1EE725760EBC0054FDEF /* CriteoPublisherSdk.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		25A8CEE711A173A6C148DB80 /* Pods-AppBidding-MoPub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppBidding-MoPub.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-AppBidding-MoPub/Pods-AppBidding-MoPub.debug.xcconfig"; sourceTree = "<group>"; };
 		26B99A87E3AE84424F00ECFB /* Pods_AppBidding_MoPub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppBidding_MoPub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3058B627C1480CE483C08F16 /* Pods-AppBidding-MoPub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppBidding-MoPub.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-AppBidding-MoPub/Pods-AppBidding-MoPub.release.xcconfig"; sourceTree = "<group>"; };
+		914B1EE525760EBC0054FDEF /* CriteoPublisherSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CriteoPublisherSdk.framework; path = "AppBidding-MoPub/CriteoPublisherSdk.framework"; sourceTree = "<group>"; };
 		E28B310524AA3AA30038C434 /* AppBidding-MoPub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AppBidding-MoPub.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E28B310824AA3AA30038C434 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E28B310924AA3AA30038C434 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -49,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				914B1EE625760EBC0054FDEF /* CriteoPublisherSdk.framework in Frameworks */,
 				1BC0C7A4B32AD8A6FF3D673F /* Pods_AppBidding_MoPub.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,6 +77,7 @@
 		17E12CEC96B8505E180A3677 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				914B1EE525760EBC0054FDEF /* CriteoPublisherSdk.framework */,
 				26B99A87E3AE84424F00ECFB /* Pods_AppBidding_MoPub.framework */,
 			);
 			name = Frameworks;
@@ -127,6 +146,7 @@
 				E28B310224AA3AA30038C434 /* Frameworks */,
 				E28B310324AA3AA30038C434 /* Resources */,
 				F8CD7E31668151DE6E8F0CE2 /* [CP] Embed Pods Frameworks */,
+				914B1EE825760EBC0054FDEF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -369,7 +389,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = S655EV5659;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AppBidding-MoPub",
+				);
 				INFOPLIST_FILE = "AppBidding-MoPub/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -388,7 +413,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = S655EV5659;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AppBidding-MoPub",
+				);
 				INFOPLIST_FILE = "AppBidding-MoPub/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -40,10 +40,14 @@
     self.adView.frame = CGRectMake(0, self.view.frame.size.height - self.view.safeAreaInsets.bottom - 50, self.view.frame.size.width, 50);
     [self.view addSubview:self.adView];
 
-    // add Criteo bids into MoPub Ad View object
-    [[Criteo sharedCriteo] setBidsForRequest:self.adView withAdUnit:[AdConfigurations criteoBannerAdUnit]];
+    [[Criteo sharedCriteo] loadBidForAdUnit:[AdConfigurations criteoBannerAdUnit]
+                            responseHandler:^(CRBid *bid) {
+        // add Criteo bids into MoPub Ad View object
+        [[Criteo sharedCriteo] enrichAdObject:self.adView withBid:bid];
 
-    [self.adView loadAd]; // since the size is known in advance
+        // load Banner ad
+        [self.adView loadAd];
+    }];
 }
 
 - (UIViewController *)viewControllerForPresentingModalView {

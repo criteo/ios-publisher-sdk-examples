@@ -2,7 +2,7 @@
 //  AdConfigurations.m
 //  AppBidding-GoogleAdManager
 //
-//  Copyright © 2020 Criteo. All rights reserved.
+//  Copyright © 2023 Criteo. All rights reserved.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -18,7 +18,7 @@
 //
 
 #import "AdConfigurations.h"
-@import CriteoPublisherSdk;
+#import <CriteoPublisherSdk/CriteoPublisherSdk.h>
 
 // Here we use Google Ad Manager test Ad Unit ID in order to demonstrate the integration
 // If you'd like to see Criteo banner in action, you need to use your own Ad Unit IDs, with Criteo line items targeting the Ad Units.

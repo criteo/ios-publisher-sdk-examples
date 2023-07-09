@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,7 @@
 		91A5EA0D248F593800772881 /* InterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A5EA0C248F593800772881 /* InterstitialViewController.m */; };
 		91A5EA10248FA3F400772881 /* CriteoSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A5EA0F248FA3F400772881 /* CriteoSample.m */; };
 		91AD33382472312500742852 /* AdConfigurations.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AD33372472312500742852 /* AdConfigurations.m */; };
+		A4B415392A546FC20025D480 /* index.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B415382A546FC20025D480 /* index.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		91A5EA0F248FA3F400772881 /* CriteoSample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CriteoSample.m; sourceTree = "<group>"; };
 		91AD33362472312500742852 /* AdConfigurations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdConfigurations.h; sourceTree = "<group>"; };
 		91AD33372472312500742852 /* AdConfigurations.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdConfigurations.m; sourceTree = "<group>"; };
+		A4B415382A546FC20025D480 /* index.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = index.swift; sourceTree = "<group>"; };
 		CD496696A492BB1C9BED369B /* Pods-AppBidding-GoogleAdManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppBidding-GoogleAdManager.release.xcconfig"; path = "Target Support Files/Pods-AppBidding-GoogleAdManager/Pods-AppBidding-GoogleAdManager.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,6 +114,7 @@
 				918F15BA245AD07F001E6671 /* LaunchScreen.storyboard */,
 				918F15BD245AD07F001E6671 /* Info.plist */,
 				918F15BE245AD07F001E6671 /* main.m */,
+				A4B415382A546FC20025D480 /* index.swift */,
 			);
 			path = "AppBidding-GoogleAdManager";
 			sourceTree = "<group>";
@@ -144,12 +147,13 @@
 		918F15A1245AD07D001E6671 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1130;
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
 				ORGANIZATIONNAME = Criteo;
 				TargetAttributes = {
 					918F15A8245AD07D001E6671 = {
 						CreatedOnToolsVersion = 11.3.1;
-						LastSwiftMigration = 1150;
+						LastSwiftMigration = 1430;
 					};
 				};
 			};
@@ -237,6 +241,7 @@
 				918F15BF245AD07F001E6671 /* main.m in Sources */,
 				91AD33382472312500742852 /* AdConfigurations.m in Sources */,
 				91A5EA0D248F593800772881 /* InterstitialViewController.m in Sources */,
+				A4B415392A546FC20025D480 /* index.swift in Sources */,
 				91A5EA0A248F592400772881 /* BannerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +294,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -347,6 +353,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -369,6 +376,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -382,11 +390,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S655EV5659;
 				INFOPLIST_FILE = "AppBidding-GoogleAdManager/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.10.0.0;
+				MARKETING_VERSION = 4.8.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.criteo.samples.AppBidding-GoogleAdManager";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -402,13 +411,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = S655EV5659;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "AppBidding-GoogleAdManager/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.10.0.0;
+				MARKETING_VERSION = 4.8.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.criteo.samples.AppBidding-GoogleAdManager";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

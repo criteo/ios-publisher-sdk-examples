@@ -2,7 +2,7 @@
 //  BannerViewController.m
 //  AppBidding-GoogleAdManager
 //
-//  Copyright © 2020 Criteo. All rights reserved.
+//  Copyright © 2023 Criteo. All rights reserved.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -19,12 +19,12 @@
 
 #import "BannerViewController.h"
 #import "AdConfigurations.h"
-@import GoogleMobileAds;
-@import CriteoPublisherSdk;
+#import <GoogleMobileAds/GoogleMobileAds.h>
+#import <CriteoPublisherSdk/CriteoPublisherSdk.h>
 
-@interface BannerViewController ()
+@interface BannerViewController () <GADBannerViewDelegate>
 
-@property(nonatomic, strong) IBOutlet DFPBannerView *bannerView;
+@property(nonatomic, strong) GAMBannerView *bannerView;
 
 @end
 
@@ -32,20 +32,55 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
+    // In this case, we instantiate the banner with desired ad size.
+    self.bannerView = [[GAMBannerView alloc]
+                       initWithAdSize:GADAdSizeBanner];
+    
     self.bannerView.adUnitID = [AdConfigurations gamBannerAdUnitId];
     self.bannerView.rootViewController = self;
-    self.bannerView.adSize = kGADAdSizeSmartBannerPortrait;
-
-    [self displayBanner];
+    self.bannerView.delegate = self;
+    
+    [self displayBanner:self.bannerView];
 }
 
-- (void)displayBanner {
-    DFPRequest *request = [DFPRequest request];
-
-    [[Criteo sharedCriteo] setBidsForRequest:request withAdUnit:[AdConfigurations criteoBannerAdUnit]];
-
-    [self.bannerView loadRequest:request];
+- (void)displayBanner:(UIView *)bannerView {
+    [self.view addSubview:bannerView];
+    [self.view addConstraints:@[
+        [NSLayoutConstraint constraintWithItem:bannerView
+                                     attribute:NSLayoutAttributeBottom
+                                     relatedBy:NSLayoutRelationEqual
+                                        toItem:self.view.safeAreaLayoutGuide
+                                     attribute:NSLayoutAttributeBottom
+                                    multiplier:1
+                                      constant:0],
+        [NSLayoutConstraint constraintWithItem:bannerView
+                                     attribute:NSLayoutAttributeCenterX
+                                     relatedBy:NSLayoutRelationEqual
+                                        toItem:self.view
+                                     attribute:NSLayoutAttributeCenterX
+                                    multiplier:1
+                                      constant:0]
+    ]];
+    
+    [[Criteo sharedCriteo] loadBidForAdUnit:[AdConfigurations criteoBannerAdUnit] responseHandler:^(CRBid *bid) {
+        // existing Ad Manager request
+        GAMRequest *request = [GAMRequest request];
+        
+        if (bid != nil) {
+            // add Criteo bids into Ad Manager request
+            [[Criteo sharedCriteo] enrichAdObject:request withBid:bid];
+        }
+        // load Banner ad
+        [self.bannerView loadRequest:request];
+    }];
 }
 
+- (void)bannerViewDidReceiveAd:(GADBannerView *)bannerView {
+  NSLog(@"criteoSDK Ad loaded.");
+}
+
+- (void)bannerView:(GADBannerView *)bannerView didFailToReceiveAdWithError:(NSError *)error {
+  NSLog(@"criteoSDK Failed to load ad with error: %@", [error localizedDescription]);
+}
 @end

@@ -5,9 +5,6 @@
       location = "group:AppBidding-GoogleAdManager/AppBidding-GoogleAdManager.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:AppBidding-MoPub/AppBidding-MoPub.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:Standalone/Standalone.xcodeproj">
    </FileRef>
    <FileRef

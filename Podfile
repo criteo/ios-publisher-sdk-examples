@@ -12,6 +12,8 @@ target 'AppBidding-GoogleAdManager' do
   pod 'CriteoPublisherSdk', '~> 4.9.0'
 end
 
+project 'AppBidding-MoPub/AppBidding-MoPub.xcodeproj'
+
 target 'Standalone' do
   project 'Standalone/Standalone.xcodeproj'
   use_frameworks!

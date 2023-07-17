@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  AppBidding-GoogleAdManager
 //
-//  Copyright © 2020 Criteo. All rights reserved.
+//  Copyright © 2023 Criteo. All rights reserved.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -19,7 +19,8 @@
 
 #import "AppDelegate.h"
 #import "AdConfigurations.h"
-@import CriteoPublisherSdk;
+#import <GoogleMobileAds/GoogleMobileAds.h>
+#import <CriteoPublisherSdk/CriteoPublisherSdk.h>
 
 @interface AppDelegate ()
 
@@ -29,11 +30,16 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [GADMobileAds.sharedInstance startWithCompletionHandler:nil];
+    
+    // Enable Criteo SDK debug logs
+    [Criteo setVerboseLogsEnabled:YES];
 
     NSArray *adUnits = @[
         [AdConfigurations criteoBannerAdUnit],
         [AdConfigurations criteoInterstitialAdUnit]
     ];
+    
     // Register Criteo SDK as early as possible
     [[Criteo sharedCriteo] registerCriteoPublisherId:[AdConfigurations criteoPublisherId] withAdUnits:adUnits];
 

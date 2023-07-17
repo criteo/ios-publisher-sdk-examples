@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: macos-10.15
+    runs-on: macos-latest
 
     steps:
     - name: Checkout
@@ -18,9 +18,6 @@ jobs:
       
     - name: Clean and Build AppBidding-GoogleAdManager
       run: xcodebuild clean build -scheme AppBidding-GoogleAdManager -workspace CriteoSamples.xcworkspace -destination "platform=iOS Simulator,name=iPhone 11"
-
-    - name: Clean and Build AppBidding-MoPub
-      run: xcodebuild clean build -scheme AppBidding-MoPub -workspace CriteoSamples.xcworkspace -destination "platform=iOS Simulator,name=iPhone 11"
 
     - name: Clean and Build Standalone
       run: xcodebuild clean build -scheme Standalone -workspace CriteoSamples.xcworkspace -destination "platform=iOS Simulator,name=iPhone 11"

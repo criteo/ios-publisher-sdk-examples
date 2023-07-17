@@ -2,7 +2,7 @@
 //  HomeViewController.m
 //  AppBidding-GoogleAdManager
 //
-//  Copyright © 2020 Criteo. All rights reserved.
+//  Copyright © 2023 Criteo. All rights reserved.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -34,6 +34,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    NSLog(@"#HomeView");
 
     self.samples = [NSMutableArray arrayWithObjects:
         [[CriteoSample alloc] initWithLabel:@"Banner Samples" AndSegueId:@"BannerSampleSegue"],

@@ -2,7 +2,7 @@
 //  InterstitialViewController.m
 //  AppBidding-GoogleAdManager
 //
-//  Copyright © 2020 Criteo. All rights reserved.
+//  Copyright © 2023 Criteo. All rights reserved.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -19,12 +19,12 @@
 
 #import "InterstitialViewController.h"
 #import "AdConfigurations.h"
-@import GoogleMobileAds;
-@import CriteoPublisherSdk;
+#import <GoogleMobileAds/GoogleMobileAds.h>
+#import <CriteoPublisherSdk/CriteoPublisherSdk.h>
 
-@interface InterstitialViewController () <GADInterstitialDelegate>
+@interface InterstitialViewController () <GADFullScreenContentDelegate>
 
-@property(nonatomic, strong) DFPInterstitial *interstitial;
+@property(nonatomic, strong) GAMInterstitialAd *interstitial;
 @property (weak, nonatomic) IBOutlet UIButton *displayInterstitialButton;
 
 @end
@@ -34,35 +34,37 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.interstitial = [self createAndLoadInterstitialWithAdUnitId:[AdConfigurations gamInterstitialAdUnitId]];
-}
+    [[Criteo sharedCriteo] loadBidForAdUnit:[AdConfigurations criteoInterstitialAdUnit] responseHandler:^(CRBid *bid) {
+        // existing Ad Manager request
+            GAMRequest *request = [GAMRequest request];
 
-- (DFPInterstitial *)createAndLoadInterstitialWithAdUnitId:(NSString *)adUnitId {
-    DFPInterstitial *interstitial = [[DFPInterstitial alloc] initWithAdUnitID:adUnitId];
-    DFPRequest *request = [DFPRequest request];
-    interstitial.delegate = self;
+            if (bid != nil) {
+                // add Criteo bids into Ad Manager request
+                [[Criteo sharedCriteo] enrichAdObject:request withBid:bid];
+            }
 
-    [[Criteo sharedCriteo] setBidsForRequest:request withAdUnit:[AdConfigurations criteoInterstitialAdUnit]];
-
-    [interstitial loadRequest:request];
-    return interstitial;
+            // load Interstitial ad
+        [GAMInterstitialAd loadWithAdManagerAdUnitID:[AdConfigurations gamInterstitialAdUnitId]
+                                             request:request
+                                   completionHandler:^(GAMInterstitialAd *ad, NSError *error) {
+          if (error) {
+            NSLog(@"criteoSDK Failed to load interstitial ad with error: %@", [error localizedDescription]);
+            return;
+          }
+          self.interstitial = ad;
+          self.interstitial.fullScreenContentDelegate = self;
+        }];
+    }];
 }
 
 - (IBAction)displayInterstitial {
-    if (self.interstitial.isReady) {
+    
+    if (self.interstitial) {
         [self.interstitial presentFromRootViewController:self];
         self.displayInterstitialButton.enabled = NO;
-    }
-}
-
-- (void)interstitialDidReceiveAd:(GADInterstitial *)ad {
-    self.displayInterstitialButton.enabled = YES;
-    [self.displayInterstitialButton setTitle:@"Display Interstitial" forState:UIControlStateNormal];
-}
-
-- (void)interstitial:(GADInterstitial *)ad didFailToReceiveAdWithError:(GADRequestError *)error {
-    self.displayInterstitialButton.enabled = NO;
-    [self.displayInterstitialButton setTitle:@"Ad Failed to Load" forState:UIControlStateNormal];
+      } else {
+        NSLog(@"Ad wasn't ready");
+      }
 }
 
 @end
